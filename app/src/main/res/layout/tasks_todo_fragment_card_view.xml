@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/tasks_todo_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/list_item_selector">
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/tasks_todo_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+    </com.facebook.login.widget.ProfilePictureView>
+
+    <TextView
+        android:id="@+id/tasks_todo_title"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/tasks_todo_pic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/default_cardview_task_name"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tasks_todo_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Completed"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tasks_todo_detail"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tasks_todo_title"
+        android:layout_below="@id/tasks_todo_title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Click to request payment from..."
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tasks_todo_price_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tasks_todo_status"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="$50"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>

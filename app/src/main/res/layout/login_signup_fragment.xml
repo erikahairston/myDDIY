@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="20dp"
+              android:background="@color/icons"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/signup_username_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"/>
+
+    <EditText
+        android:id="@+id/signup_password_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"/>
+
+    <EditText
+        android:id="@+id/signup_confirm_password_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"/>
+
+    <EditText
+        android:id="@+id/signup_email_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/signup_name_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Name (First Last)"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/signup_school_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="School"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:layout_height="50dp"
+        android:id="@+id/create_account"
+        style="@style/ParseLoginUI.Button"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/accept_doer_button_selector"
+        android:text="Create Account"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

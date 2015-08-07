@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".LoginActivity">
+
+    <item
+        android:id="@+id/next_arrow"
+        android:orderInCategory="0"
+        android:icon="@drawable/ic_keyboard_arrow_right_white_24dp"
+        android:title="@string/login_next"
+        app:showAsAction="always"/>
+</menu>

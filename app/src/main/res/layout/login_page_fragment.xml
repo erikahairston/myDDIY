@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/login_page_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/login_page_fragment_DDIY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="40dp"
+        android:text="@string/ddiy"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/login_page_fragment_username_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_fragment_DDIY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Username:"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/login_page_fragment_username"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_fragment_username_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+
+    <TextView
+        android:id="@+id/login_page_fragment_password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_fragment_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Password:"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/login_page_fragment_password"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_fragment_password_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        />
+
+    <LinearLayout
+        android:id="@+id/login_page_fragment_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_fragment_password"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:id="@+id/login_page_fragment_login_button"
+            style="@style/ParseLoginUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Log In"
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/login_page_fragment_signup_button"
+            style="@style/ParseLoginUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/login_page_fragment_facebook_button"
+        android:layout_width="match_parent"
+        android:contentDescription="Facebook Login"
+        android:layout_height="60dp"
+        android:layout_below="@+id/login_page_fragment_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/com_parse_ui_facebook_login_button_background_selector"
+        android:src="@drawable/com_parse_ui_facebook_login_logo"
+        android:padding="15dp"
+        android:scaleType="fitStart"
+        android:text="Login With Facebook"
+        android:textColor="@color/com_parse_ui_parse_login_display_text"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/login_page_fragment_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:text="Login with Facebook"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/you_are_matched_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="BzzBzz, you've got a match"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/contact_fragment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/you_are_matched_text_view"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Contact this person:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/contact_profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="40dp"
+        android:layout_below="@id/contact_fragment_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/contact_fragment_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/contact_profile_pic"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/accept_doer_button_selector"
+            android:text="@string/call"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+
+        <Button
+            android:id="@+id/text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/accept_doer_button_selector"
+            android:textColor="@android:color/black"
+
+            android:text="@string/text"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/contact_fragment_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/accept_doer_button_selector"
+        android:text="@string/done"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

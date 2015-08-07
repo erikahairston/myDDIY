@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+       android:drawable="@drawable/com_parse_ui_facebook_login_logo"
+    />

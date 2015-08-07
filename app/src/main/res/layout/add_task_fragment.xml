@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/add_task_frag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/category_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_dns_black_24dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_toEndOf="@id/category_text_view"
+        />
+
+    <EditText
+        android:id="@+id/task_title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_spinner"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:drawableStart="@drawable/ic_content_paste_black_24dp"
+        android:hint="@string/default_task_title_hint"/>
+
+
+    <EditText
+        android:id="@+id/task_details_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_title_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_description_black_24dp"
+        android:gravity="top"
+        android:hint="@string/default_task_detail_hint"
+        android:textColor="@android:color/black"
+
+        android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+        />
+
+    <EditText
+        android:id="@+id/task_price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_details_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_local_atm_black_24dp"
+        android:hint="@string/price"
+        android:textColor="@android:color/black"
+
+        android:inputType="number"
+        />
+
+
+    <TextView
+        android:id="@+id/time_available_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_price_edit_text"
+        android:drawableStart="@drawable/ic_query_builder_black_24dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"/>
+
+
+    <Spinner
+        android:id="@+id/time_frames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/task_price_edit_text"
+        android:layout_below="@id/task_price_edit_text"
+        android:layout_toEndOf="@id/time_available_text_view"
+        android:spinnerMode="dropdown"
+        />
+
+    <TextView
+        android:id="@+id/calendar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_frames"
+        android:drawableStart="@drawable/ic_event_black_24dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/datePicker"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_frames"
+        android:layout_toRightOf="@id/calendar_text_view"
+        android:text="@string/date_picker_button"/>
+
+<!--    <Button
+        android:id="@+id/add_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/add_task"/>
+        android:text="@string/add_task"/> -->
+</RelativeLayout>

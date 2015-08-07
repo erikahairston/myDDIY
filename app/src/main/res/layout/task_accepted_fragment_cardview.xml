@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:id="@+id/cardview_relative_layout_task_accepted_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/list_item_selector"
+    >
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/task_accepted_fragment_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/task_accepted_fragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/task_accepted_fragment_pic"
+        android:layout_marginLeft="16dp"
+        android:text="@string/user_default_name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <RatingBar
+        android:id="@+id/task_accepted_fragment_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_accepted_fragment_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/task_accepted_fragment_pic"
+        />
+
+</RelativeLayout>

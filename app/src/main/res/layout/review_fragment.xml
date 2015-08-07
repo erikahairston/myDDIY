@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/payment_Frag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/review_fragment_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/icons"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:text="Bob completed your task: "
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/review_fragment_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_fragment_text"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/icons"
+        android:paddingBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="15dp"
+        android:text="Name of Task"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/review_fragment_task_details"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/review_fragment_task_name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/icons"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="5dp"
+        android:text="Task details"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/review_fragment_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_fragment_task_details"
+        android:layout_marginBottom="1dp"
+        android:background="@color/icons"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="15dp"
+        android:text="Give Bob a Rating: "
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        />
+
+
+    <RatingBar
+        android:id="@+id/review_fragment_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_fragment_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:background="@color/icons"
+        android:numStars="5"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/review_fragment_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/review_fragment_rating_bar"
+        android:layout_gravity="center"
+        android:background="@drawable/accept_doer_button_selector"
+        android:text="@string/set_review"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/review_fragment_button"
+        android:layout_below="@id/review_fragment_text2"
+        android:layout_toEndOf="@id/review_fragment_rating_bar"
+        android:background="@color/icons"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/review_fragment_button"
+        android:layout_below="@id/review_fragment_text2"
+        android:layout_toStartOf="@id/review_fragment_rating_bar"
+        android:background="@color/icons"/>
+</RelativeLayout>

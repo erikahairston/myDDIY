@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/cardview_relative_layout_incomplete_tasks_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="1dp"
+    >
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/trash"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/accent"
+            android:gravity="center"
+            android:tag="Bottom3"
+            >
+
+            <ImageView
+                android:id="@+id/trash_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/surface_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/list_item_selector"
+            >
+
+            <TextView
+                android:id="@+id/incomplete_tasks_fragment_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/default_cardview_task_name"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/incomplete_tasks_fragment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Date due"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                />
+
+
+            <TextView
+                android:id="@+id/incomplete_tasks_fragment_detail"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/incomplete_tasks_fragment_name"
+                android:layout_below="@id/incomplete_tasks_fragment_name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/task_details"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/incomplete_tasks_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/incomplete_tasks_fragment_date"
+                android:layout_marginEnd="16dp"
+                android:text="Time"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</RelativeLayout>
+

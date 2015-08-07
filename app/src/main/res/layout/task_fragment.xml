@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/task_fragment_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/food2">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/task_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/task_fragment_image"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_camera"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/task_fragment_task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/task_fragment_image"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/default_task_title"
+        android:textColor="@color/icons"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/task_fragment_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_fragment_image"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@android:color/white"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:gravity="center|start"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/user_default_name"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/price_task_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_fragment_image"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toRightOf="@id/task_fragment_name"
+        android:background="@android:color/white"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_local_atm_black_24dp"
+        android:gravity="center|start"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/default_requester_price_task_detail"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/task_fragment_date"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_fragment_name"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@android:color/white"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_event_black_24dp"
+        android:gravity="center|start"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="Date"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/task_fragment_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_fragment_name"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@id/task_fragment_date"
+        android:background="@android:color/white"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_query_builder_black_24dp"
+        android:gravity="center|start"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="Time of day"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/task_fragment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_fragment_date"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_description_black_24dp"
+        android:gravity="center|start"
+        android:nestedScrollingEnabled="true"
+        android:paddingBottom="65dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/task_details"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/accept_task_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/task_fragment_detail"
+        android:background="@drawable/accept_doer_button_selector"
+        android:text="@string/accept_task"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"/>
+
+    <!--  <Button
+          android:id="@+id/delete_task_button"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/accept_task_button"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:text="@string/delete_task_button"
+          android:visibility="invisible"/> -->
+</RelativeLayout>

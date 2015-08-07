@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hot_color">#328CB2</color>
+    <color name="brownish">#B26F20</color>
+    <color name="black">#000000</color>
+
+    <color name="bzz_bzz_yellow">#E6E600</color>
+    <color name="com_parse_ui_parse_login_button">#40CCCCCC</color>
+    <color name="com_parse_ui_parse_login_button_push">#30CCCCCC</color>
+    <color name="com_parse_ui_parse_login_button_focus">#35CCCCCC</color>
+    <color name="com_parse_ui_parse_login_help_button_label">#E0E0E0</color>
+    <color name="com_parse_ui_parse_login_help_button_label_push">#AAAAAA</color>
+    <color name="com_parse_ui_parse_login_help_button_label_focus">#CCCCCC</color>
+    <color name="com_parse_ui_parse_login_text_hint">#AAAAAA</color>
+    <color name="com_parse_ui_parse_login_display_text">@android:color/white</color>
+    <color name="com_parse_ui_facebook_login_button">#3B5998</color>
+    <color name="com_parse_ui_facebook_login_button_push">#2E4677</color>
+    <color name="com_parse_ui_facebook_login_button_focus">#304F8B</color>
+    <color name="com_parse_ui_twitter_login_button">#2DAAE2</color>
+    <color name="com_parse_ui_twitter_login_button_push">#2588B5</color>
+    <color name="com_parse_ui_twitter_login_button_focus">#2788BE</color>
+
+    <color name="primary">#00BCD4</color>
+    <color name="baby_blue">#B2EBF2</color>
+    <color name="darker_baby_blue">#80DEEA</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="drawer_dark">#006064</color>
+    <color name="primary_light">#B2EBF2</color>
+    <color name="accent">#FFC107</color>
+    <color name="accent3">#FFD54F</color>
+    <color name="accent2">#80FFC107</color>
+    <color name="drawer">#99CDDC39</color>
+    <color name="drawer0.5">#CDDC39</color>
+    <color name="lime">#CDDC39</color>
+    <color name="accept">#C6FF00</color>
+    <color name="focused_accept">#AEEA00</color>
+    <color name="drawer2">#E6EE9C</color>
+    <color name="primary_text">#212121</color>
+    <color name="trans_black">#20212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+</resources>

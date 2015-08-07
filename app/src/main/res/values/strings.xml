@@ -1,0 +1,116 @@
+<resources>
+    <string name="facebook_api_id">1603819313214337</string>
+    <string name="parse_app_id">CruWAo3ttNjm1NnAMG9k68Yq6gH97drjbbAVOh8K</string>
+    <string name="parse_client_key">g5rvVJS7SD0cynx08GAtTY1ZytcYc44Rscxhk74i</string>
+    <string name="venmo_app_id">2759</string>
+    <string name="venmo_app_id_int">2759</string>
+    <string name="venmo_secret">tDNtCBpqhm7Qh7XjVapyA7Fq6c6DPWdc</string>
+
+    <string name="about_me">About Me</string>
+    <string name="accept_doer">Accept Doer</string>
+    <string name="accept_task">Accept Task</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_task">Add Task</string>
+    <string name="app_name">DDIY</string>
+    <string name="average_rating">Average Rating:</string>
+    <string name="default_average_rating">3.14</string>
+    <string name="call">Call</string>
+    <string name="ddiy">Don\'t Do It Yourself</string>
+    <string name="ddiy_short">DDIY</string>
+    <string name="done">Done</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="email">E-mail</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_next">Next</string>
+    <string name="login_title">Login</string>
+    <string name="match">You\'ve Got a Match!</string>
+    <string name="username">Username</string>
+    <string name="ok">or</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="notifications">Notifications</string>
+    <string name="pay">Pay</string>
+    <string name="payment_request">Payment Request</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="price">Price</string>
+    <string name="profile_view">View Profile</string>
+    <string name="request">Request?</string>
+    <string name="requested">Be Requested?</string>
+    <string name="review_of_services">Ratings and Reviews of Services</string>
+    <string name="save">Save</string>
+    <string name="school">School</string>
+    <string name="set_review">Set Review</string>
+    <string name="student_at">Student at</string>
+    <string name="task_details">Task Details</string>
+    <string name="testing_button">You Pressed the Login Button</string>
+    <string name="text">Text</string>
+    <string name="time_available">Time Available:</string>
+    <string name="title_activity_add_task">Add a Task</string>
+    <string name="you_are_matched">You\'ve got a Match!</string>
+    <string name="date_picker_title">Date of task:</string>
+    <string name="date_picker_button">Choose Date</string>
+
+    <string name="default_contact_me">Contact John Doe</string>
+    <string name="default_cardview_doer_name">Beyonce Knowles</string>
+    <string name="default_cardview_task_name">Clean My Dishes</string>
+    <string name="default_cardview_pay_me_boo">Would you like to pay Jane Doe?</string>
+    <string name="default_requester_about_task_detail">I like chocolate XD</string>
+    <string name="default_requester_category_task_detail">Category: Food</string>
+    <string name="default_requester_name_task_detail">Requester: John Doe</string>
+    <string name="default_requester_price_task_detail">$30</string>
+    <string name="default_requester_school_task_detail">School: Purdue</string>
+    <string name="default_requester_task_title_task_detail">Eat Chocolate</string>
+    <string name="default_request_text_view">Derek will clean your dorm room</string>
+    <string name="default_request_text_view_time_date">Tuesday 5/30 at 4pm</string>
+    <string name="default_requester_time_task_detail">between 4pm and 6pm</string>
+    <string name="default_review_accepter">Review UnicornMan</string>
+    <string name="default_task_title">Clean Bathroom</string>
+    <string name="default_task_title_hint">Task Title</string>
+    <string name="default_task_detail_hint">Task Details</string>
+    <string name="default_text_check_out_button">Check out John\'s profile</string>
+
+    <string name="user_default_about_me">This is me, tra la da, I am a pony, tra la da</string>
+    <string name="user_default_name">John Doeberman</string>
+    <string name="user_default_school">Facebook University</string>
+
+    <string name="dialog_add_task_text">Would you like to save this task?</string>
+
+    <string-array name="task_time_frame">
+        <item>Pick A Time Frame</item>
+        <item>AnyTime</item>
+        <item>Early Morning</item>
+        <item>Morning</item>
+        <item>Early Afternoon</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+
+    <string-array name="ratings_array">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="menu_options">
+        <item>Home</item>
+        <item>View Profile</item>
+        <item>Your Created Tasks</item>
+        <item>Tasks To-Do</item>
+        <item>Tasks You\'ve Done</item>
+        <item>Your Past Created Tasks</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <string name="com_parse_ui_facebook_login_failed_toast">Facebook login failed</string>
+    <string name="com_parse_ui_login_warning_facebook_login_failed">
+        "Facebook login failed, exception: "</string>
+    <string name="com_parse_ui_login_warning_facebook_login_user_update_failed">
+        "Updating user object after Facebook login failed, exception: "</string>
+    <string name="delete_task_button">Delete Task</string>
+</resources>

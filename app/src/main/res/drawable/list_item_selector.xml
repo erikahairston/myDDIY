@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:drawable="@drawable/list_item_pressed"/>
+    <item android:state_focused="true" android:drawable="@color/com_parse_ui_facebook_login_button_focus"/>
+    <item android:drawable="@drawable/list_item"/>
+
+</selector>
